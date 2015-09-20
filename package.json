@@ -1,0 +1,28 @@
+{
+  "name": "thepixelculture",
+  "version": "0.1.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "harp server src -p 3321",
+    "deploy": "harp compile src deploy",
+    "post": "gulp post --name ",
+    "page": "gulp page --name "
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albizures/thepixelculture.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/albizures/thepixelculture/issues"
+  },
+  "homepage": "thepixelculture.com",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-util": "^3.0.6"
+  }
+}

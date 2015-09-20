@@ -1,0 +1,4 @@
+h1 Welcome to The Pixel Culture
+for post, slug in public.posts._data
+  h2: a(href="/posts/#{ slug }")= post.title
+  != partial("posts/" + slug)
