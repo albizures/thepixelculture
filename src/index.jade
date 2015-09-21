@@ -1,4 +1,14 @@
 h1 Welcome to The Pixel Culture
-for post, slug in public.posts._data
-  h2: a(href="/posts/#{ slug }")= post.title
-  != partial("posts/" + slug)
+.row 
+  .col.l8  
+    .row
+        for post, slug in public.posts._data
+          .col.l12
+            .card
+              .card-image
+                img(src="#{post.img}")
+                span.card-title #{post.title}
+              .card-content
+                != partial("posts/" + slug)  
+  .col.l4
+  

@@ -5,18 +5,17 @@ html
     title The Pixel Culture
     link(href="http://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
     link(rel="stylesheet", href="/css/main.css")
-  body
-    .navbar-fixed.row
+  body.blue-grey.darken-3
+    .navbar-fixed
       nav.cyan
-        .nav-wrapper
+        .nav-wrapper.container
           .col.s12
-            a.brand-logo The Pixel Culture
+            a.brand-logo(href="/") The Pixel Culture
             ul.right
-              li
-                a Games
-              li
-                a Arts
-    main.grey-text.text-lighten-5              
+              for page, slug in public.pages._data
+                li(class="#{ current.source == slug ? 'active' : '' }") 
+                  a.capitalize(href="/pages/#{ slug }")= page.title
+    main.grey-text.text-lighten-5.container             
       != yield
     script(type="text/javascript", src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(type="text/javascript", src="/js/materialize.min.js")

@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "harp server src -p 3321",
     "deploy": "harp compile src deploy",
-    "post": "gulp post --name ",
-    "page": "gulp page --name "
+    "post": "gulp post",
+    "page": "gulp page",
+    "tag" : "gulp tag"
   },
   "repository": {
     "type": "git",
