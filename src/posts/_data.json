@@ -1,3 +1,10 @@
 {
-
+	"heroes": {
+		"title": "heroes",
+		"img": "img/a.png",
+		"tags": [
+			"character",
+			"fan-art"
+		]
+	}
 }

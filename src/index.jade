@@ -8,7 +8,13 @@ h1 Welcome to The Pixel Culture
               .card-image
                 img(src="#{post.img}")
                 span.card-title #{post.title}
-              .card-content
+              .card-content.grey-text.text-darken-4
                 != partial("posts/" + slug)  
+                br
+                for tag in post.tags
+                  .chip
+                    a(href="tags/#{tag}") #{tag}
+                    
+                    
   .col.l4
   
