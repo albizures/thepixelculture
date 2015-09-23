@@ -24,3 +24,9 @@
 
 ## Deploy
 `npm run deploy`
+
+To deploy you have to follow these steps
+
+* On terminal, get to the src folder
+* Run the command *run server deploy* and wait for the terminal to finish and there should be a folder called **deploy**
+* Copy and paste that folder in the gh-pages branch 
